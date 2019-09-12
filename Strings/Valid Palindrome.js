@@ -30,8 +30,6 @@ var isValid = function(str) {
     let z = 'z'.charCodeAt(0);
     let a0 ='0'.charCodeAt(0);
     let a9 ='9'.charCodeAt(0);
-    if ((str.charCodeAt(0) >= a && str.charCodeAt(0) <= z) || (str.charCodeAt(0) >= a0 && str.charCodeAt(0) <= a9)) {
-        return true;
-    }
-    return false;
+
+    return (str.charCodeAt(0) >= a && str.charCodeAt(0) <= z) || (str.charCodeAt(0) >= a0 && str.charCodeAt(0) <= a9);
 }
